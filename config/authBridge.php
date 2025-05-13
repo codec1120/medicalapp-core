@@ -1,5 +1,11 @@
 <?php
 
 return [
-    'api_base' => env('AUTHBRIDGE_API_BASE'),
+    'oauth' => [
+        'api_base' => env('AUTHBRIDGE_API_BASE'),
+    ],
+
+    'clinic' => [
+        'api_base' => env('AUTHBRIDGE_API_BASE'),
+    ],
 ];

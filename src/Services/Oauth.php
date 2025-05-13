@@ -10,7 +10,7 @@ class Clinic
 
     public function __construct()
     {
-        $this->apiBase = config('authbridge.api_base');
+        $this->apiBase = config('authbridge.oauth.api_base');
     }
 
     public function verifyToken(string $token): bool
