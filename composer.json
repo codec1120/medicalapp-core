@@ -1,0 +1,26 @@
+{
+  "name": "laravel/core",
+  "description": "Laravel package for auth verification and 3rd-party API communication",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "LaravelCore\\AuthApiBridge\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9.0|^10.0|^11.0",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelCore\\AuthApiBridge\\AuthApiBridgeServiceProvider"
+      ],
+      "aliases": {
+        "AuthBridge": "LaravelCore\\AuthApiBridge\\Facades\\AuthBridge"
+      }
+    }
+  }
+}
