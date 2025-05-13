@@ -8,6 +8,6 @@ class AuthBridge extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'authbridge';
+        return 'authBridge';
     }
 }

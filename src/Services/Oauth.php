@@ -4,7 +4,7 @@ namespace MedicalappCore\AuthApiBridge\Services;
 
 use Illuminate\Support\Facades\Http;
 
-class Clinic
+class Oauth
 {
     protected string $apiBase;
 
