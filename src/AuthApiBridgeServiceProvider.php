@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelCore\AuthApiBridge;
+namespace MedicalappCore\AuthApiBridge;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelCore\AuthApiBridge\Services\{
+use MedicalappCore\AuthApiBridge\Services\{
     Clinic,
     Oauth
 };

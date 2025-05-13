@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelCore\AuthApiBridge\Middleware;
+namespace MedicalappCore\AuthApiBridge\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use LaravelCore\AuthApiBridge\Facades\AuthBridge;
+use MedicalappCore\AuthApiBridge\Facades\AuthBridge;
 use LaravelCore\Base\Response;
 
 class VerifyExternalAuth

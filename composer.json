@@ -1,11 +1,11 @@
 {
-  "name": "laravel/core",
+  "name": "medicalappcore/auth-api-bridge",
   "description": "Laravel package for auth verification and 3rd-party API communication",
   "type": "library",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "LaravelCore\\AuthApiBridge\\": "src/"
+      "MedicalappCore\\AuthApiBridge\\": "src/"
     }
   },
   "require": {
@@ -16,10 +16,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "LaravelCore\\AuthApiBridge\\AuthApiBridgeServiceProvider"
+        "MedicalappCore\\AuthApiBridge\\AuthApiBridgeServiceProvider"
       ],
       "aliases": {
-        "AuthBridge": "LaravelCore\\AuthApiBridge\\Facades\\AuthBridge"
+        "AuthBridge": "MedicalappCore\\AuthApiBridge\\Facades\\AuthBridge"
       }
     }
   }

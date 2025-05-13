@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelCore\AuthApiBridge\Services;
+namespace MedicalappCore\AuthApiBridge\Services;
 
 use Illuminate\Support\Facades\Http;
 

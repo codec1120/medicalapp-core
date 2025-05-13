@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelCore\Base;
+namespace MedicalappCore\AuthApiBridge\Base;
 
 use Illuminate\Http\Response as HttpResponse;
 use Illuminate\Http\JsonResponse;

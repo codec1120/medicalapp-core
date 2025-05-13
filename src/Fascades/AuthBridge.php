@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelCore\AuthApiBridge\Facades;
+namespace MedicalappCore\AuthApiBridge\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
