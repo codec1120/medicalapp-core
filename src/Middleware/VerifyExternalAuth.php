@@ -5,7 +5,7 @@ namespace MedicalappCore\AuthApiBridge\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use MedicalappCore\AuthApiBridge\Facades\AuthBridge;
-use MedicalappCore\AuthApiBridge\BaseResponse;
+use MedicalappCore\AuthApiBridge\Base\BaseResponse;
 
 class VerifyExternalAuth
 {
