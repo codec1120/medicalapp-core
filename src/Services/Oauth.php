@@ -10,7 +10,7 @@ class Oauth
 
     public function __construct()
     {
-        $this->apiBase = config('authbridge.oauth.api_base');
+        $this->apiBase = config('authBridge.oauth.api_base');
     }
 
     public function verifyToken(string $token): bool

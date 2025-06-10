@@ -8,6 +8,6 @@ class Clinic
 
     public function __construct()
     {
-        $this->apiUrl = config('authbridge.clinic.api_base');
+        $this->apiUrl = config('authBridge.clinic.api_base');
     }
 }
