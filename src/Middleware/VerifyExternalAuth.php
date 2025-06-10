@@ -5,7 +5,7 @@ namespace MedicalappCore\AuthApiBridge\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use MedicalappCore\AuthApiBridge\Facades\AuthBridge;
-use LaravelCore\Base\BaseResponse;
+use MedicalappCore\AuthApiBridge\BaseResponse;
 
 class VerifyExternalAuth
 {
