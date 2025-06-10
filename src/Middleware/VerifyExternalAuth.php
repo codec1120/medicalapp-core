@@ -5,7 +5,7 @@ namespace MedicalappCore\AuthApiBridge\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use MedicalappCore\AuthApiBridge\Facades\AuthBridge;
-use LaravelCore\Base\Response;
+use LaravelCore\Base\BaseResponse;
 
 class VerifyExternalAuth
 {
@@ -14,7 +14,7 @@ class VerifyExternalAuth
         $token = $request->bearerToken();
 
         if (!$token || !AuthBridge::verifyToken($token)) {
-            return Response::forbidden();
+            return BaseResponse::forbidden();
         }
 
         return $next($request);

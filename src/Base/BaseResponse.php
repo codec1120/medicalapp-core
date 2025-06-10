@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Response;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Cookie;
 
-class BaseResonse
+class BaseResponse
 {
     public static function throwError(string $message)
     {
