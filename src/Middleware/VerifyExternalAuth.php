@@ -13,9 +13,13 @@ class VerifyExternalAuth
     {
         $token = $request->bearerToken();
 
-        if (!$token || !AuthBridge::verifyToken($token)) {
+        $tokenVerification = AuthBridge::verifyToken($token);
+
+        if (!$token || !$tokenVerification) {
             return BaseResponse::forbidden();
         }
+
+        $request->attributes->set('user', $tokenVerification);
 
         return $next($request);
     }
