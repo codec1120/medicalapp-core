@@ -17,11 +17,7 @@ class Oauth
     {
         $response = Http::withToken($token)->get($this->apiBase . '/auth/verify');
 
-        if ($response->ok() && $response->json('valid') === true) {
-            return $response->json('user');
-        } 
-
-        return false;
+        return $response->ok() && $response->json('valid') === true;
     }
 
     public function getUser(string $token): array

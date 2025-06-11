@@ -19,7 +19,7 @@ class VerifyExternalAuth
             return BaseResponse::forbidden();
         }
 
-        $request->attributes->set('user', $tokenVerification);
+        $request->attributes->set('user', AuthBridge::getUser($token));
 
         return $next($request);
     }
